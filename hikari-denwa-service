@@ -1,0 +1,358 @@
+[root@hasnat ~]# yum -y install gcc gcc-c++ kernel-devel
+[root@hasnat ~]# yum -y install ncurses-devel openssl-devel libxml2-devel subversion
+
+# cd /usr/local/src
+[root@hasnat src]# wget http://downloads.asterisk.org/pub/telephony/dahdi-linux/dahdi-linux-2.6.0.tar.gz
+
+[root@hasnat src]# tar zxvf dahdi-linux-2.6.0.tar.gz
+
+[root@hasnat src]# cd dahdi-linux-2.6.0
+
+[root@hasnat dahdi-linux-2.6.0]# make
+[root@hasnat dahdi-linux-2.6.0]# make install
+
+[root@hasnat dahdi-linux-2.6.0]# cd ..
+[root@hasnat src]# wget http://downloads.asterisk.org/pub/telephony/dahdi-tools/dahdi-tools-2.6.0.tar.gz
+
+[root@hasnat src]# tar zxvf dahdi-tools-2.6.0.tar.gz
+
+[root@hasnat src]# cd dahdi-tools-2.6.0
+
+[root@hasnat dahdi-tools-2.6.0]# ./configure
+[root@hasnat dahdi-tools-2.6.0]# make
+[root@hasnat dahdi-tools-2.6.0]# make config
+
+[root@hasnat dahdi-tools-2.6.0]# cd ..
+[root@hasnat src]# rm -f *.tar.gz
+[root@hasnat src]# cd
+
+# Contains the list of modules to be loaded / unloaded by /etc/init.d/dahdi.
+#
+# NOTE:  Please add/edit /etc/modprobe.d/dahdi or /etc/modprobe.conf if you
+#        would like to add any module parameters.
+#
+# Format of this file: list of modules, each in its own line.
+# Anything after a '#' is ignore, likewise trailing and leading
+# whitespaces and empty lines.
+ 
+# Digium TE205P/TE207P/TE210P/TE212P: PCI dual-port T1/E1/J1
+# Digium TE405P/TE407P/TE410P/TE412P: PCI quad-port T1/E1/J1
+# Digium TE220: PCI-Express dual-port T1/E1/J1
+# Digium TE420: PCI-Express quad-port T1/E1/J1
+# wct4xxp
+ 
+# Digium TE120P: PCI single-port T1/E1/J1
+# Digium TE121: PCI-Express single-port T1/E1/J1
+# Digium TE122: PCI single-port T1/E1/J1
+# wcte12xp
+ 
+# Digium T100P: PCI single-port T1
+# Digium E100P: PCI single-port E1
+# wct1xxp
+ 
+# Digium TE110P: PCI single-port T1/E1/J1
+# wcte11xp
+ 
+# Digium TDM2400P/AEX2400: up to 24 analog ports
+# Digium TDM800P/AEX800: up to 8 analog ports
+# Digium TDM410P/AEX410: up to 4 analog ports
+# wctdm24xxp
+ 
+# X100P - Single port FXO interface
+# X101P - Single port FXO interface
+# wcfxo
+ 
+# Digium TDM400P: up to 4 analog ports
+# wctdm
+ 
+# Digium B410P: 4 NT/TE BRI ports
+# wcb4xxp
+ 
+# Digium TC400B: G729 / G723 Transcoding Engine
+# wctc4xxp
+ 
+# Xorcom Astribank Devices
+# xpp_usb
+ 
+# DAHDI Dummy 追加
+dahdi_dummy
+
+
+[root@hasnat ~]# groupadd -g 5060 asterisk
+[root@hasnat ~]# useradd -g 5060 -u 5060 -d /var/lib/asterisk -s /sbin/nologin asterisk
+
+[root@hasnat ~]# mv /etc/udev/rules.d/dahdi.rules /etc/udev/rules.d/99-dahdi.rules
+
+[root@hasnat ~]# /etc/init.d/dahdi start
+Loading DAHDI hardware modules:
+  dahdi_dummy:                                          [  OK  ]
+ 
+Running dahdi_cfg:                                      [  OK  ]
+
+[root@hasnat ~]# ll /dev/dahdi/
+crw-rw---- 1    asterisk asterisk   196, 254    2月 11 15:03     channel
+crw-rw---- 1    asterisk asterisk   196,   0    2月 11 15:03     ctl
+crw-rw---- 1    asterisk asterisk   196, 255    2月 11 15:03     pseudo
+crw-rw---- 1    asterisk asterisk   196, 253    2月 11 15:03     timer
+
+[root@hasnat ~]# cd /usr/local/src
+[root@hasnat ~]# wget http://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-1.8.9.2.tar.gz
+
+[root@hasnat ~]# tar zxvf asterisk-1.8.9.2.tar.gz
+
+[root@hasnat ~]# cd asterisk-1.8.9.2
+
+[root@hasnat asterisk-1.8.9.2]# ./configure
+[root@hasnat asterisk-1.8.9.2]# make
+[root@hasnat asterisk-1.8.9.2]# make install
+
+[root@hasnat asterisk-1.8.9.2]# make samples
+[root@hasnat asterisk-1.8.9.2]# make config
+
+
+[root@hasnat asterisk-1.8.9.2]# patch -p0 < app_voicemail.c.101025-01.patch
+patching file apps/app_voicemail.c
+Hunk #1 succeeded at 6797 (offset 233 lines).
+Hunk #2 succeeded at 6613 (offset 1 line).
+Hunk #3 succeeded at 7555 (offset 269 lines).
+Hunk #4 succeeded at 8094 (offset 27 lines).
+Hunk #5 succeeded at 9107 (offset 269 lines).
+
+root@hasnat asterisk-1.8.9.2]# patch -p0 < say.c.101025-01.patch
+patching file main/say.c
+Hunk #7 succeeded at 3297 (offset 8 lines).
+Hunk #9 succeeded at 6280 (offset 10 lines).
+Hunk #11 succeeded at 7356 (offset 10 lines).
+Hunk #13 succeeded at 7556 (offset 10 lines).
+Hunk #15 succeeded at 7863 (offset 10 lines).
+
+
+[root@hasnat asterisk-1.8.9.2]# patch -p0 < chan_sip.rt200ne.110205-01.patch
+patching file channels/chan_sip.c
+Hunk #3 succeeded at 18050 (offset 8 lines).
+Hunk #4 succeeded at 19042 (offset -31 lines).
+Hunk #5 succeeded at 19093 (offset 8 lines).
+Hunk #6 succeeded at 27966 (offset -31 lines).
+Hunk #7 succeeded at 28445 (offset 8 lines).
+Hunk #8 succeeded at 29665 (offset -31 lines).
+patching file channels/sip/include/sip.h
+
+[root@hasnat asterisk-1.8.9.2]# ./configure
+[root@hasnat asterisk-1.8.9.2]# make
+[root@hasnat asterisk-1.8.9.2]# make install
+
+[root@hasnat ~]# cd /var/lib/asterisk/sounds
+
+[root@hasnat sounds]# wget ftp://ftp.voip-info.jp/asterisk/sounds/1_6/asterisk-sound-jp_16_pre.tar.gz
+
+[root@hasnat sounds]# tar zxvf asterisk-sound-jp_16_pre.tar.gz
+
+[root@hasnat sounds]# rm -f asterisk-sound-jp_16_pre.tar.gz
+
+[root@hasnat sounds]# pico /etc/asterisk/asterisk.conf
+languageprefix = yes                ; Use the new sound prefix path syntax.
+
+[root@hasnat ~]# cd /etc
+
+[root@hasnat etc]# cp –r asterisk asterisk.bak
+
+[root@hasnat etc]# cd asterisk
+[root@hasnat asterisk]# wget http://ftp.voip-info.jp/asterisk/conf/conf-sample-1.6_01.tar.gz
+[root@hasnat asterisk]# tar zxvf conf-sample-1.6_01.tar.gz
+
+[root@hasnat asterisk]# rm -f conf-sample-1.6_01.tar.gz
+
+[root@hasnat asterisk]# cd
+
+[root@hasnat ~]# chown -R asterisk. /var/lib/asterisk
+[root@hasnat ~]# chown -R asterisk. /var/log/asterisk
+[root@hasnat ~]# chown -R asterisk. /var/spool/asterisk
+[root@hasnat ~]# chown -R asterisk. /var/run/asterisk
+[root@hasnat ~]# chown -R asterisk. /etc/asterisk
+
+[root@hasnat ~]# chmod -R u=rwX,g=rX,o= /var/lib/asterisk
+[root@hasnat ~]# chmod -R u=rwX,g=rX,o= /var/log/asterisk
+[root@hasnat ~]# chmod -R u=rwX,g=rX,o= /var/spool/asterisk
+[root@hasnat ~]# chmod -R u=rwX,g=rX,o= /etc/asterisk
+[root@hasnat ~]# chmod -R u=rwX,g=rX,o= /var/run/asterisk
+
+[root@hasnat ~]# pico /etc/asterisk/asterisk.conf
+[directories]
+astetcdir => /etc/asterisk
+astmoddir => /usr/lib/asterisk/modules
+astvarlibdir => /var/lib/asterisk
+astagidir => /var/lib/asterisk/agi-bin
+astspooldir => /var/spool/asterisk
+astrundir => /var/run/
+astlogdir => /var/log/asterisk
+ 
+[options]
+languageprefix=yes
+runuser = asterisk
+rungroup = asterisk
+
+[root@hasnat ~]# reboot
+
+[root@hasnat ~]# netstat -an -udp
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local   Address     Foreign Address State       PID/Program name
+Udp 0   0   0.0.0.0:    5060    0.0.0.0:*       2617    /asterisk
+udp     0   0   0.0.0.0:    4569    0.0.0.0:*       2617    /asterisk
+
+[root@hasnat ~]# asterisk -vvvvvr
+sterisk 1.8.9.2, Copyright (C) 1999 - 2011 Digium, Inc. and others.
+Created by Mark Spencer
+Asterisk comes with ABSOLUTELY NO WARRANTY; type core show warranty for details.
+This is free software, with components licensed under the GNU General Public
+License version 2 and other licenses; you are welcome to redistribute it under
+certain conditions. Type core show license for details.
+=========================================================================
+  == Parsing /etc/asterisk/asterisk.conf:   == Found
+Running as groupasteris
+Connected to Asterisk 1.8.9.2 currently running on localhost (pid = 2617)
+Verbosity is at least 4
+ 
+hasnat*CLI> sip show
+channel        channels       channelstats   domains        history        inuse
+mwi            objects        peer           peers          registry       rt200ne
+sched          settings       subscriptions  tcp            users          user
+ 
+localhost*CLI> sip show rt200ne
+RT-200NE at ..
+-   192.168.0.1
+ 
+localhost*CLI> quit
+Executing last minute cleanups
+
+[root@hasnat ~]# cp /etc/asterisk/sip.conf /etc/asterisk/sip.conf.org
+[root@hasnat ~]# pico /etc/asterisk/sip.conf
+[general]
+maxexpirey=3600
+defaultexpirey=3600
+context=default
+port=5060
+bindaddr=0.0.0.0
+srvlookup=yes
+allowguest=no
+disallow=all
+allow=ulaw
+allow=alaw
+allow=gsm
+language=ja
+localnet=192.168.0.0/255.255.255.0
+ 
+;iPhoneでの待ち受け対応
+tcpenable=yes
+transport=udp,tcp
+ 
+;PR-200NE のプライベートIPアドレスの指定
+rt200ne=192.168.0.1
+ 
+;ひかり電話対応ルータの内線設定
+register => 7:ルータへ登録したパスワード:0007@hikari-denwa/200
+ 
+[201]
+type=friend
+defaultuser=201
+secret=内線201のパスワード
+canreinvite=no
+host=dynamic
+dtmfmode=rfc2833
+callgroup=1
+pickupgroup=1
+;mailbox=201
+ 
+[202]
+type=friend
+defaultuser=202
+secret=内線202のパスワード
+canreinvite=no
+host=dynamic
+dtmfmode=rfc2833
+callgroup=1
+pickupgroup=1
+;mailbox=202
+ 
+;[203]
+;type=friend
+;defaultuser=203
+;secret=内線203のパスワード
+;canreinvite=no
+;host=dynamic
+;dtmfmode=rfc2833
+;callgroup=1
+;pickupgroup=1
+;mailbox=203
+ 
+; PR-200NE　ひかり電話の設定
+[hikari-denwa]
+type=friend
+secret=ルータへ登録したパスワード
+port=5060
+defaultuser=0007
+fromuser=7
+host=192.168.0.1
+fromdomain=192.168.0.1
+context=default
+insecure=invite,port
+dtmfmode=inband
+canreinvite=no
+disallow=all
+allow=ulaw
+callgroup=1
+picupgroup=1
+session-expires=300
+session-minse=300
+
+[root@hasnat ~]# service asterisk restart
+Stopping safe_asterisk:                                     [  OK  ]
+Shutting down asterisk:                                     [  OK  ]
+Starting asterisk:                                          [  OK  ]
+
+[root@hasnat ~]# asterisk -vvvvr
+Asterisk 1.8.9.2, Copyright (C) 1999 - 2011 Digium, Inc. and others.
+Created by Mark Spencer
+Asterisk comes with ABSOLUTELY NO WARRANTY; type core show warranty for details.
+This is free software, with components licensed under the GNU General Public
+License version 2 and other licenses; you are welcome to redistribute it under
+certain conditions. Type core show license for details.
+=========================================================================
+  == Parsing /etc/asterisk/asterisk.conf:   == Found
+Running as group asterisk
+Connected to Asterisk 1.8.9.2 currently running on hasnat (pid = 3083)
+Verbosity was 3 and is now 4
+ 
+localhost*CLI> sip show rt200ne
+RT-200NE at ..
+- 192.168.0.1
+ 
+localhost*CLI> sip show registry
+Host            dnsmgr  Username    Refresh     State       Reg.Time
+hikari-denwa:5060 N     7           3600    Registered  Sat, 11 Feb 2012 16:25:43
+1 SIP registrations.
+ 
+localhost*CLI> sip show peers
+Name/username       Host        Dyn Forcerport ACL Port     Status
+201/201         (Unspecified)   D           0           Unmonitored
+202/202         (Unspecified)   D           0           Unmonitored
+hikari-denwa/0007   192.168.0.1             5060        Unmonitored
+3 sip peers [Monitored: 0 online, 0 offline Unmonitored: 1 online, 2 offline]
+
+
+[root@hasnat ~]# cd /etc/asterisk/
+[root@hasnat asterisk]# cp extensions.conf extensions.conf.org
+[root@hasnat asterisk]# pico extensions.conf
+
+== Using SIP RTP CoS mark 5
+   -- Executing [携帯電話番号@default:1] Set("SIP/201-00000010", "CALLERID(num)=ひかり電話番号") in new stack
+   -- Executing [携帯電話番号@default:2] Set("SIP/201-00000010", "CALLERID(name)=ひかり電話番号") in new stack
+   -- Executing [携帯電話番号@default:3] Dial("SIP/201-00000010", "SIP/携帯電話番号@hikari-denwa,120,T") in new stack
+ == Using SIP RTP CoS mark 5
+   -- Called SIP/携帯電話番号@hikari-denwa
+   -- SIP/hikari-denwa-00000011 is making progress passing it to SIP/201-00000010
+   -- SIP/hikari-denwa-00000011 is ringing
+   -- SIP/hikari-denwa-00000011 is making progress passing it to SIP/201-00000010
+ == Spawn extension (default, 携帯電話番号, 3) exited non-zero on 'SIP/201-00000010'
+== Using SIP RTP CoS mark 5
+   -- Executing [200@default:1] Dial("SIP/hikari-denwa-0000000d", "SIP/201&SIP/202&SIP/203&SIP/204&IAX2/201&IAX2/202&IAX2/203&IAX2/204") in new stack
+
