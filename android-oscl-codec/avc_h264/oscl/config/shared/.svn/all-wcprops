@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared
+END
+osclconfig_error_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_error_check.h
+END
+osclconfig_global_new_delete.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_global_new_delete.h
+END
+osclconfig_time_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_time_check.h
+END
+osclconfig_unix_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_unix_common.h
+END
+osclconfig_ix86.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_ix86.h
+END
+osclconfig_proc_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_proc_check.h
+END
+osclconfig_global_placement_new.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_global_placement_new.h
+END
+osclconfig_lib_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_lib_check.h
+END
+osclconfig_io_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_io_check.h
+END
+osclconfig_limits_typedefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_limits_typedefs.h
+END
+osclconfig_memory_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_memory_check.h
+END
+osclconfig_util_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_util_check.h
+END
+osclconfig_check.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_check.h
+END
+osclconfig_no_os.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_no_os.h
+END
+osclconfig_proc_unix_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_proc_unix_common.h
+END
+osclconfig_ansi_memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/shared/osclconfig_ansi_memory.h
+END

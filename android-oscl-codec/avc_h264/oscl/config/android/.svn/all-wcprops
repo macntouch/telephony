@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android
+END
+osclconfig_proc.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_proc.h
+END
+osclconfig_unix_android.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_unix_android.h
+END
+osclconfig_proc_unix_android.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_proc_unix_android.h
+END
+osclconfig_lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_lib.h
+END
+osclconfig_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_io.h
+END
+osclconfig_memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_memory.h
+END
+osclconfig_error.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_error.h
+END
+osclconfig_util.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_util.h
+END
+osclconfig_time.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_time.h
+END
+osclconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig.h
+END
+osclconfig_compiler_warnings.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/config/android/osclconfig_compiler_warnings.h
+END

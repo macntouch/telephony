@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src
+END
+oscl_base.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_base.h
+END
+oscl_dll.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_dll.h
+END
+oscl_refcounter.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_refcounter.h
+END
+oscl_queue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_queue.cpp
+END
+oscl_int64_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_int64_utils.cpp
+END
+oscl_string_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_string_utils.cpp
+END
+oscl_stdstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_stdstring.h
+END
+oscl_lock_base.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_lock_base.h
+END
+oscl_tagtree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_tagtree.cpp
+END
+pvlogger_accessories.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/pvlogger_accessories.h
+END
+oscl_byte_order.inl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_byte_order.inl
+END
+oscl_byte_order.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_byte_order.cpp
+END
+oscl_exclusive_ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_exclusive_ptr.h
+END
+oscl_linked_list.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_linked_list.cpp
+END
+pvlogger_registry.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/pvlogger_registry.h
+END
+oscl_time.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_time.h
+END
+oscl_tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_tree.h
+END
+pvlogger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/pvlogger.cpp
+END
+oscl_assert.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_assert.h
+END
+oscl_vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_vector.h
+END
+oscl_tls.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_tls.h
+END
+oscl_singleton.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_singleton.h
+END
+oscl_base.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_base.cpp
+END
+oscl_mem_basic_functions.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_mem_basic_functions.h
+END
+pvlogger_c.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/pvlogger_c.h
+END
+oscl_defalloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_defalloc.h
+END
+oscl_refcounter_memfrag.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_refcounter_memfrag.h
+END
+oscl_mem_inst.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_mem_inst.h
+END
+oscl_stdstring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_stdstring.cpp
+END
+oscl_map.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_map.h
+END
+oscl_base_macros.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_base_macros.h
+END
+oscl_base_alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_base_alloc.h
+END
+oscl_int64_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_int64_utils.h
+END
+oscl_queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_queue.h
+END
+oscl_string_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_string_utils.h
+END
+oscl_time.inl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_time.inl
+END
+oscl_time.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_time.cpp
+END
+oscl_tree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_tree.cpp
+END
+oscl_shared_ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_shared_ptr.h
+END
+oscl_tagtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_tagtree.h
+END
+oscl_opaque_type.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_opaque_type.h
+END
+oscl_assert.inl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_assert.inl
+END
+oscl_assert.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_assert.cpp
+END
+oscl_tls.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_tls.cpp
+END
+oscl_vector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_vector.cpp
+END
+oscl_singleton.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_singleton.cpp
+END
+oscl_byte_order.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_byte_order.h
+END
+oscl_linked_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_linked_list.h
+END
+oscl_mem_basic_functions.inl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_mem_basic_functions.inl
+END
+pvlogger_c.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/pvlogger_c.cpp
+END
+oscl_mem_basic_functions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_mem_basic_functions.cpp
+END
+oscl_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_types.h
+END
+pvlogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/pvlogger.h
+END
+oscl_uuid.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/232/trunk/codecs/video/avc_h264/oscl/osclbase/src/oscl_uuid.h
+END

@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src
+END
+rate_control.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/rate_control.h
+END
+vlc_encode_inline.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/vlc_encode_inline.h
+END
+fastquant.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/fastquant.cpp
+END
+vlc_encode.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/vlc_encode.h
+END
+sad.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/sad.cpp
+END
+fastquant_inline.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/fastquant_inline.h
+END
+com_orangelabs_rcs_core_ims_protocol_rtp_codec_video_h263_encoder_NativeH263Encoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/com_orangelabs_rcs_core_ims_protocol_rtp_codec_video_h263_encoder_NativeH263Encoder.h
+END
+dct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/dct.cpp
+END
+fastcodemb.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/fastcodemb.h
+END
+findhalfpel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/findhalfpel.cpp
+END
+dct_inline.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/dct_inline.h
+END
+mp4enc_api.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/mp4enc_api.cpp
+END
+mp4enc_lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/mp4enc_lib.h
+END
+bitstream_io.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/bitstream_io.cpp
+END
+me_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/me_utils.cpp
+END
+motion_comp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/motion_comp.cpp
+END
+mp4def.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/mp4def.h
+END
+rate_control.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/rate_control.cpp
+END
+combined_encode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/combined_encode.cpp
+END
+sad_mb_offset.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/sad_mb_offset.h
+END
+vlc_encode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/vlc_encode.cpp
+END
+fastidct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/fastidct.cpp
+END
+sad_halfpel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/sad_halfpel.cpp
+END
+vop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/vop.cpp
+END
+vlc_enc_tab.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/vlc_enc_tab.h
+END
+sad_halfpel_inline.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/sad_halfpel_inline.h
+END
+com_orangelabs_rcs_core_ims_protocol_rtp_codec_video_h263_encoder_NativeH263Encoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/com_orangelabs_rcs_core_ims_protocol_rtp_codec_video_h263_encoder_NativeH263Encoder.cpp
+END
+mp4lib_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/mp4lib_int.h
+END
+fastcodemb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/fastcodemb.cpp
+END
+sad_inline.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/sad_inline.h
+END
+pvm4vencoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/pvm4vencoder.cpp
+END
+datapart_encode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/datapart_encode.cpp
+END
+dct.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/dct.h
+END
+motion_est.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/motion_est.cpp
+END
+m4venc_oscl.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/m4venc_oscl.h
+END
+mp4enc_api.cpp.original
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/mp4enc_api.cpp.original
+END
+bitstream_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28/trunk/codecs/video/m4v_h263/enc/src/bitstream_io.h
+END
