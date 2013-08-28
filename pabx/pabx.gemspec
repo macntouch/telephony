@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Elias Hasnat"]
   s.email       = ["android.hasnat@gmail.com"]
-  s.homepage    = "http://github.com/claymodel/pabx"
+  s.homepage    = "http://github.com/claymodel/telephony/pabx"
   s.summary     = %q{IMS SoftSwitch Manager - Ruby}
   s.description = %q{Add support to your ruby or rails projects to IMS SoftSwitch Manager}
 
