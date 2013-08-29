@@ -4,6 +4,7 @@ require "pabx/version"
 
 Gem::Specification.new do |s|
   s.name        = "pabx"
+  s.license     = 'MIT'
   s.version     = Rami::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Elias Hasnat"]
