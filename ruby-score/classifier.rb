@@ -1,42 +1,45 @@
-class Classifier
-  attr_accessor :training_sets, :noise_words
+module Classifier
+    class StatsClassifier
+      attr_accessor :training_sets
 
-  def initialize(data)
-    @training_sets = {}
-    filename = File.join(File.dirname(__FILE__), 'stop_words.txt')
-    @noise_words = File.new(filename).readlines.map(&:chomp)
-    train_data(data)
-  end
+      def initialize(data)
+        @training_sets = {}
+        filename = File.join(File.dirname(__FILE__), '..', 'data', 'stop_words.txt')
+        @noise_words = File.new(filename).readlines.map(&:chomp)
 
-  def scores(text)
-    words = text.downcase.scan(/[a-z]+/)
+        train(data)
+      end
 
-    scores = {}
-    training_sets.each_pair do |category, word_weights|
-      scores[category] = score(word_weights, words)
-    end
+      def scores(text)
+        words = text.downcase.scan(/[a-z]+/)
 
-    scores
-  end
+        scores = {}
+        training_sets.each_pair do |category, word_weights|
+          scores[category] = score(word_weights, words)
+        end
 
-  def train_data(data)
-    data.each_pair do |category, text|
-      words = text.downcase.scan(/[a-z]+/)
-      word_weights = Hash.new(0)
+        scores
+      end
 
-      words.each {|word| word_weights[word] += 1 unless noise_words.index(word)}
+      def train(data)
+        data.each_pair do |category, text|
+          words = text.downcase.scan(/[a-z]+/)
+          word_weights = Hash.new(0)
 
-      ratio = 1.0 / words.length
-      word_weights.keys.each {|key| word_weights[key] *= ratio}
+          words.each {|word| word_weights[word] += 1 unless @noise_words.index(word)}
 
-      training_sets[category] = word_weights
-    end
-  end
+          ratio = 1.0 / words.length
+          word_weights.keys.each {|key| word_weights[key] *= ratio}
 
-  private
-    def score(word_weights, words)
-      score = words.inject(0) {|acc, word| acc + word_weights[word]}
-      1000.0 * score / words.size
+          training_sets[category] = word_weights
+        end
+      end
+
+      private
+        def score(word_weights, words)
+          score = words.inject(0) {|acc, word| acc + word_weights[word]}
+          1000.0 * score / words.size
+        end
     end
 end
 
