@@ -7,4 +7,5 @@ IMS Soft Switch Control Ruby Module
 ===================================
 https://rubygems.org/gems/pabx
 
+MIT License
 
